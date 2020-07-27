@@ -11,7 +11,7 @@ function Menu() {
       </a>
 
       <Button as="a" href="/">
-          Novo vídeo33
+          Novo vídeo
       </Button>
     </nav>
   )
