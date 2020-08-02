@@ -1,0 +1,49 @@
+{
+	"categorias": [
+	  {
+		"id": 1,
+		"nome": "Jacarelvis 1",
+		"titulo": "Jacarelvis",
+		"link": "https://www.youtube.com/user/Jacarelvis",
+		"cor": "#00D100",
+		"link_extra": {
+		  "text": "Desenhos animados infantis do Jacarelvis e sua turma",
+		  "url": "http://www.jacarelvis.com.br"
+		},
+		"videos": [
+		  {
+			"titulo": "Jacarelvis Vol.01 | Desenho Infantil (Completo) ♪♫",
+			"url": "https://www.youtube.com/watch?v=mPCFa3Waa1E"
+		  },
+		  {
+			"titulo": "Jacarelvis e Amigos 2 (COMPLETO)│Desenho Animado Infantil",
+			"url": "https://www.youtube.com/watch?v=oPetkern1hI"
+		  },
+		  {
+			"titulo": "Jacarelvis e Amigos 3 (COMPLETO)│Desenho Infantil Musical",
+			"url": "https://www.youtube.com/watch?v=afA4Kl5AMoA"
+		  }        
+		]
+	  },
+	  {
+		"id": 2,
+		"nome": "Bita 2",		  
+		"titulo": "Mundo Bita",
+		"cor": "#F17926",
+		"link_extra": {
+		  "text": "Bita e sua turma",
+		  "url": "https://www.alura.com.br/cursos-online-programacao"
+		},
+		"videos": [
+		  {
+			"titulo": "Bita e o Nosso Mundo - Álbum completo",
+			"url": "https://www.youtube.com/watch?v=V9fL453PPUI"
+		  },
+		  {
+			"titulo": "Mundo Bita - Rádio Bita (temp. 1 completa)",
+			"url": "youtube.com/watch?v=m3yO3xa62FQ"
+		  }
+		]
+	  }
+	]
+  }
