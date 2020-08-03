@@ -12,6 +12,7 @@ const Main = styled.main`
     padding-right: 5%;
 `;
 
+// eslint-disable-next-line react/prop-types
 function PageDefault({ children }){
 	return (
 		<>

@@ -29,14 +29,14 @@ function CadastroCategoria(){
 
 	useEffect(() => {
 		console.log('alo');
-		const URL = 'http://localhost:3001/categorias';
+		const URL = 'https://meowflix.herokuapp.com/categorias';
 		fetch(URL)
-		.then(async (resposta) => {
-			const objeto = await resposta.json();
-			setCategorias([
-				...objeto,
-			]);
-		});
+			.then(async (resposta) => {
+				const objeto = await resposta.json();
+				setCategorias([
+					...objeto,
+				]);
+			});
 	}, []);
 
 	return (
