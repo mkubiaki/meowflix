@@ -1,49 +1,147 @@
 {
-	"categorias": [
-	  {
-		"id": 1,
-		"nome": "Jacarelvis 1",
-		"titulo": "Jacarelvis",
-		"link": "https://www.youtube.com/user/Jacarelvis",
-		"cor": "#00D100",
-		"link_extra": {
-		  "text": "Desenhos animados infantis do Jacarelvis e sua turma",
-		  "url": "http://www.jacarelvis.com.br"
-		},
-		"videos": [
-		  {
-			"titulo": "Jacarelvis Vol.01 | Desenho Infantil (Completo) ♪♫",
-			"url": "https://www.youtube.com/watch?v=mPCFa3Waa1E"
-		  },
-		  {
-			"titulo": "Jacarelvis e Amigos 2 (COMPLETO)│Desenho Animado Infantil",
-			"url": "https://www.youtube.com/watch?v=oPetkern1hI"
-		  },
-		  {
-			"titulo": "Jacarelvis e Amigos 3 (COMPLETO)│Desenho Infantil Musical",
-			"url": "https://www.youtube.com/watch?v=afA4Kl5AMoA"
-		  }        
-		]
-	  },
-	  {
-		"id": 2,
-		"nome": "Bita 2",		  
-		"titulo": "Mundo Bita",
-		"cor": "#F17926",
-		"link_extra": {
-		  "text": "Bita e sua turma",
-		  "url": "https://www.alura.com.br/cursos-online-programacao"
-		},
-		"videos": [
-		  {
-			"titulo": "Bita e o Nosso Mundo - Álbum completo",
-			"url": "https://www.youtube.com/watch?v=V9fL453PPUI"
-		  },
-		  {
-			"titulo": "Mundo Bita - Rádio Bita (temp. 1 completa)",
-			"url": "youtube.com/watch?v=m3yO3xa62FQ"
-		  }
-		]
-	  }
-	]
-  }
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Jacarelvis",
+      "titulo": "Jacarelvis",
+      "link": "https://www.youtube.com/user/Jacarelvis",
+      "cor": "#00D100",
+      "link_extra": {
+        "text": "Desenhos animados infantis do Jacarelvis e sua turma",
+        "url": "http://www.jacarelvis.com.br"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Bita",
+      "titulo": "Mundo Bita",
+      "cor": "#F17926",
+      "link_extra": {
+        "text": "Bita e sua turma",
+        "url": "https://www.mundobita.com.br"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Jacarelvis Vol.01 | Desenho Infantil (Completo) ♪♫",
+      "url": "https://www.youtube.com/watch?v=mPCFa3Waa1E"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Jacarelvis e Amigos 2 (COMPLETO)│Desenho Animado Infantil",
+      "url": "https://www.youtube.com/watch?v=oPetkern1hI"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Jacarelvis e Amigos 3 (COMPLETO)│Desenho Infantil Musical",
+      "url": "https://www.youtube.com/watch?v=afA4Kl5AMoA"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Pintinho Amarelinho 🐤 [Show de ROCK!] 🐤",
+      "url": "https://www.youtube.com/watch?v=OkwrS0s9akU"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Jacarelvis Pirata!? Música O LIXO É O MEU TESOURO + outros clipes!",
+      "url": "https://www.youtube.com/watch?v=c_dXt8jDd9Y"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "We Will Rock You! ♫♪ Homenagem do Jacarelvis (Queen)",
+      "url": "https://www.youtube.com/watch?v=WjYA7sTZMq8"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Chapeuzinho Vermelho 🎵 História Infantil MUSICAL por Jacarelvis 🎵",
+      "url": "https://www.youtube.com/watch?v=dx0YOr_TKuM"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "OS GATINHOS | Desenho Infantil + 7 vídeos do Jacarelvis e Amigos",
+      "url": "https://www.youtube.com/watch?v=MxIShwCDlWE"
+    },
+    {
+      "id": 9,
+      "categoriaId": 1,
+      "titulo": "DESENHO INFANTIL - Dinossauro + 6 músicas infantis animadas",
+      "url": "https://www.youtube.com/watch?v=7rmKriz-PII"
+    },
+    {
+      "id": 10,
+      "categoriaId": 1,
+      "titulo": "Desenho Infantil - O SOM DO XILOFONE - Jacarelvis e Amigos",
+      "url": "https://www.youtube.com/watch?v=OKOfqMpZk8o"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "Bita e o Nosso Mundo - Álbum completo",
+      "url": "https://www.youtube.com/watch?v=V9fL453PPUI"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "Mundo Bita - Rádio Bita (temp. 1 completa)",
+      "url": "youtube.com/watch?v=m3yO3xa62FQ"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "titulo": "Bita e o Circo - Álbum completo",
+      "url": "youtube.com/watch?v=hGa-gj2Nr10"
+    },
+    {
+      "id": 14,
+      "categoriaId": 2,
+      "titulo": "Rádio Bita - O Carimbador Maluco",
+      "url": "youtube.com/watch?v=pOyTbxti3e8"
+    },
+    {
+      "id": 15,
+      "categoriaId": 2,
+      "titulo": "Mundo Bita - Xic, Xic, Xic (Vídeo infantil)",
+      "url": "youtube.com/watch?v=cnzgHAIRqmc"
+    },
+    {
+      "id": 16,
+      "categoriaId": 2,
+      "titulo": "Mundo Bita - Cada Coisa Tem Seu Formato",
+      "url": "youtube.com/watch?v=qAvTDWtxEgU"
+    },
+    {
+      "id": 17,
+      "categoriaId": 2,
+      "titulo": "Mundo Bita - Dinossauros (Vídeo infantil)",
+      "url": "youtube.com/watch?v=0GIgk4yuHOQ"
+    },
+    {
+      "id": 18,
+      "categoriaId": 2,
+      "titulo": "Mundo Bita - Bita e o Futebol (Extras)",
+      "url": "youtube.com/watch?v=Vw2nI5tFjQs"
+    },
+    {
+      "id": 19,
+      "categoriaId": 2,
+      "titulo": "Mundo Bita - Minha Pipa",
+      "url": "youtube.com/watch?v=2l9nXqvhy6U"
+    },
+    {
+      "id": 20,
+      "categoriaId": 2,
+      "titulo": "Mundo Bita - A Boneca e o Boneco (Vídeo infantil)",
+      "url": "youtube.com/watch?v=4hmTy4mTCtc"
+    }
+  ]
+}

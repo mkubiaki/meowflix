@@ -32,6 +32,10 @@ Label.Text = styled.span`
   transition: .1s ease-in-out;
 `;
 
+const Error = styled.div`
+  margin-bottom: 30px;
+`;
+
 const Input = styled.input`
   background: #53585D;
   color: #F5F5F5;
@@ -46,7 +50,7 @@ const Input = styled.input`
   border-bottom: 4px solid #53585D;
   
   padding: 16px 16px;
-  margin-bottom: 45px;
+  margin-bottom: 5px;
   
   resize: none;
   border-radius: 4px;
@@ -72,12 +76,16 @@ const Input = styled.input`
 `;
 
 function FormField({
-	label, type, name, value, onChange
+	label, type, name, value, onChange, suggestions, isRequired, errorText
 }){
 	const fieldId = `id_${name}`;
 	const isTypeTextArea = type === 'textarea';
 	const tag = isTypeTextArea ? 'textarea' : 'input';
-	console.log(type);
+
+	const hasValue = Boolean(value.length);
+	const hasSuggestions = Boolean(suggestions.length);
+	const required = Boolean(isRequired);
+
 	return (
 		<FormFieldWrapper>
 			<Label
@@ -85,16 +93,46 @@ function FormField({
 			>
 				<Input
 					as={tag}
+					id={fieldId}
 					type={type}
-					name={name}
 					value={value}
+					name={name}
+					hasValue={hasValue}
 					onChange={onChange}
+					autoComplete={hasSuggestions ? 'off' : 'on'}
+        			list={hasSuggestions ? `suggestionFor_${fieldId}` : undefined}
 				/>
+
 				<Label.Text>
 					{label}
 					:
 				</Label.Text>
+				{
+					hasSuggestions && (
+						<datalist id={`suggestionFor_${fieldId}`}>
+						{
+						suggestions.map((suggestion) => (
+							<option value={suggestion} key={`suggestionFor_${fieldId}_option${suggestion}`}>
+							{suggestion}
+							</option>
+						))
+						}
+						</datalist>
+					)
+				}
 			</Label>
+			
+			<Error>
+				<span className="formField_error">
+					{
+						required && (
+							!hasValue && (
+								errorText
+							)
+						)
+					}
+				</span>
+			</Error>
 		</FormFieldWrapper>
 	);
 }
@@ -103,6 +141,9 @@ FormField.defaultProps = {
 	type: 'text',
 	value: '',
 	onChange: () => {},
+	suggestions: [],
+	isRequired: 'false',
+	errorText: ''
 };
 
 FormField.propTypes = {
@@ -111,5 +152,8 @@ FormField.propTypes = {
 	type: PropTypes.string,
 	value: PropTypes.string,
 	onChange: PropTypes.func.isRequired,
+	suggestions: PropTypes.arrayOf(PropTypes.string),
+	isRequired: PropTypes.string,
+	errorText: PropTypes.string,
 };
 export default FormField;
