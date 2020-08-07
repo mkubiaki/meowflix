@@ -45,15 +45,13 @@ function CadastroCategoria(){
 	const errors = {};
 
 	useEffect(() => {
-		console.log('alo');
-		//const URL = 'https://meowflix.herokuapp.com/categorias';
-		const URL = 'http://localhost:8080/categorias';
-		fetch(URL)
-			.then(async (resposta) => {
-				const objeto = await resposta.json();
-				setCategorias([
-					...objeto,
-				]);
+		categoriasRepository
+			.getAll()
+			.then((categoriasDoServidor) => {
+				setCategorias(categoriasDoServidor);
+			})
+			.catch((err) => {
+				console.log(err.message);
 			});
 	}, []);
 
